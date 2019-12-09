@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Visor de Horarios</title>
+    <link rel="icon" href="imgs/search.png">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Alfa+Slab+One">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body style="font-family: 'Alfa Slab One', cursive;">
+    <div class="container entrada">
+        <div class="row">
+            <div class="col">
+                <h1 class="text-center">Visor de Horarios &amp; Cupos</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-6 col-sm-4 col-md-3 text-center">
+                <h5 class="text-center">NRC #1</h5>
+                <input class="in" type="text" maxlength="4">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 text-center">
+                <h5 class="text-center">NRC #2</h5>
+                <input class="in" type="text" maxlength="4">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 text-center">
+                <h5 class="text-center">NRC #3</h5>
+                <input class="in" type="text" maxlength="4">
+            </div>
+            <div class="col-6 col-sm-4 col-md-3 text-center">
+                <h5 class="text-center">NRC #4</h5>
+                <input class="in" type="text" maxlength="4">
+            </div>
+            <div class="col-6 col-sm-4 col-md-6 text-center">
+                <h5 class="text-center">NRC #5</h5>
+                <input class="in" type="text" maxlength="4">
+            </div>
+            <div class="col-6 col-sm-4 col-md-6 text-center">
+                <h5 class="text-center">NRC #6</h5>
+                <input class="in" type="text" maxlength="4">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center"><button class="btn btn-primary text-center" type="button"
+                    onclick="consultar()">Consultar</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col text-center">
+                <input type="file" id="fileInput">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-xl-4 text-center">
+                <iframe name="mat1" id="mat1" class="mat">
+                </iframe>
+            </div>
+            <div class="col-lg-6 col-xl-4 text-center">
+                <iframe name="mat2" id="mat2" class="mat">
+                </iframe>
+            </div>
+            <div class="col-lg-6 col-xl-4 text-center">
+                <iframe name="mat3" id="mat3" class="mat">
+                </iframe>
+            </div>
+            <div class="col-lg-6 col-xl-4 text-center">
+                <iframe name="mat4" id="mat4" class="mat">
+                </iframe>
+            </div>
+            <div class="col-lg-6 col-xl-4 text-center">
+                <iframe name="mat5" id="mat5" class="mat">
+                </iframe>
+            </div>
+            <div class="col-lg-6 col-xl-4 text-center">
+                <iframe name="mat6" id="mat6" class="mat">
+                </iframe>
+            </div>
+        </div>
+    </div>
+    <div style="display: none;">
+        <form id="target" action="https://guayacan.uninorte.edu.co/4PL1CACI0N35/registro/resultado_nrc1.php"
+            method="post" name="frmnrc" id="frmnrc" target='mat1'>
+            <input name="valida" type="hidden" class="campos" size="2" maxlength="2" value="OK">
+            <input name="nrc" type="text" maxlength="4">
+            <input name="datos_periodo" type="hidden" id="codigo_periodo_nrc">
+            <input name="nom_periodo" type="hidden" id="nombre_periodo_nrc">
+            <input name="datos_nivel" type="hidden" id="codigo_nivel_nrc">
+            <input name="nom_nivel" type="hidden" id="nombre_nivel_nrc">
+            <input name="BtnNRC" type="submit" class="botones" id="buscar_nrc">
+        </form>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"
+        integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

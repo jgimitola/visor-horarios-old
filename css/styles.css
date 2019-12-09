@@ -1,0 +1,37 @@
+@media (min-width: 300px) and (max-width: 576px) {
+  h1 {
+    font-size: 30px;
+  }
+}
+
+#fileInput {
+  margin: 20px auto 20px auto;
+  width: 300px;
+}
+
+body {
+  background-image: url('../imgs/books.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  color: white;
+}
+
+input {
+  width: 120px;
+  text-align: center;
+  outline-color: transparent;
+  outline-style: none;
+  border-color: transparent;
+  border-radius: 25px;
+  background-color: rgb(214, 233, 250);
+}
+
+
+
+iframe {
+  border-color: transparent;
+  width: 100%;
+  height: 100%;
+}
