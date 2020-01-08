@@ -22,7 +22,7 @@ fileInput.addEventListener('change', function (e) {
             let content = reader.result;
             let nrcs = content.split(",");
             let tnrcs = $("div > input.in");
-            for (let i = 0; i < 6; i++) {
+            for (let i = 0; i < 7; i++) {
                tnrcs[i].value = nrcs[i];
             }
         }
