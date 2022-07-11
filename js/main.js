@@ -1,6 +1,6 @@
 //Just modify these constants.
-const codPeriodo = "202210";
-const namePeriodo = "Primer Semestre 2021";
+const codPeriodo = "202230";
+const namePeriodo = "Segundo Semestre 2022";
 const codNivel = "PR";
 const nameNivel = "Pregrado";
 
